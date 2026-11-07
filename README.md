@@ -20,10 +20,10 @@ Card portfolio managers have to keep product lines healthy, decide which segment
 
 | Module | File | Question | Core SQL |
 |---|---|---|---|
-| 1 | `sql/01_portfolio_health_kpis.sql` | How healthy is each card tier? | `GROUP BY` tier, conditional aggregation |
-| 2 | `sql/02_tier_and_segment_mix.sql` | Where is the portfolio concentrated, and where is credit unused? | `CASE` banding, `NTILE(4)` on credit limit |
-| 3 | `sql/03_penetration_and_attrition.sql` | Do products held, inactivity, and spend momentum predict attrition? | Banding, rate by group |
-| 4 | `sql/04_opportunity_assessment.sql` | Which actions are worth the most? | CTEs, `UNION ALL`, baseline comparison |
+| 1 | [`sql/01_portfolio_health_kpis.sql`](sql/01_portfolio_health_kpis.sql) | How healthy is each card tier? | `GROUP BY` tier, conditional aggregation |
+| 2 | [`sql/02_tier_and_segment_mix.sql`](sql/02_tier_and_segment_mix.sql) | Where is the portfolio concentrated, and where is credit unused? | `CASE` banding, `NTILE(4)` on credit limit |
+| 3 | [`sql/03_penetration_and_attrition.sql`](sql/03_penetration_and_attrition.sql) | Do products held, inactivity, and spend momentum predict attrition? | Banding, rate by group |
+| 4 | [`sql/04_opportunity_assessment.sql`](sql/04_opportunity_assessment.sql) | Which actions are worth the most? | CTEs, `UNION ALL`, baseline comparison |
 
 **Sizing method (module 4).** For each segment:
 
@@ -36,7 +36,7 @@ These are directional estimates. The segments overlap, so the three figures must
 
 ## Key findings
 
-*All figures are from the output files in `outputs/`.*
+*All figures are from the output files in [`outputs/`](outputs/).*
 
 **1. Portfolio health (module 1)**
 - Blue accounts are 93.2% of the base. Silver, Gold, and Platinum together are 6.8%, and they carry much higher credit limits (about $25K to $30K against $7.4K for Blue).
@@ -110,4 +110,4 @@ card_portfolio_management/
 
 1. Import `data/BankChurners.csv` into a table named `bankchurners`. Drop the two `Naive_Bayes_Classifier_*` columns, which are leakage columns in the public file.
 2. Run each file in `sql/` in order. The queries use standard SQL (`CASE`, `NTILE`, window functions, CTEs), so they run on MySQL 8.0 or PostgreSQL. They were checked on SQLite.
-3. Compare results with the CSVs in `outputs/`.
+3. Compare results with the CSVs in [`outputs/`](outputs/).
