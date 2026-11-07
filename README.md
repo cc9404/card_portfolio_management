@@ -24,6 +24,7 @@ Card portfolio managers have to keep product lines healthy, decide which segment
 | 2 | [`sql/02_tier_and_segment_mix.sql`](sql/02_tier_and_segment_mix.sql) | Where is the portfolio concentrated, and where is credit unused? | `CASE` banding, `NTILE(4)` on credit limit |
 | 3 | [`sql/03_penetration_and_attrition.sql`](sql/03_penetration_and_attrition.sql) | Do products held, inactivity, and spend momentum predict attrition? | Banding, rate by group |
 | 4 | [`sql/04_opportunity_assessment.sql`](sql/04_opportunity_assessment.sql) | Which actions are worth the most? | CTEs, `UNION ALL`, baseline comparison |
+| 5 | [`sql/05_segmentation.sql`](sql/05_segmentation.sql) | Which customer segments should each strategy target? | Priority `CASE` rules, one segment per account |
 
 **Sizing method (module 4).** For each segment:
 
@@ -95,7 +96,8 @@ card_portfolio_management/
 │   ├── 01_portfolio_health_kpis.sql
 │   ├── 02_tier_and_segment_mix.sql
 │   ├── 03_penetration_and_attrition.sql
-│   └── 04_opportunity_assessment.sql
+│   ├── 04_opportunity_assessment.sql
+│   └── 05_segmentation.sql
 └── outputs/
     ├── 01_portfolio_health_kpis.csv
     ├── 02_tier_and_segment_mix_1.csv
@@ -103,7 +105,8 @@ card_portfolio_management/
     ├── 03_penetration_and_attrition_1.csv
     ├── 03_penetration_and_attrition_2.csv
     ├── 03_penetration_and_attrition_3.csv
-    └── 04_opportunity_assessment.csv
+    ├── 04_opportunity_assessment.csv
+    └── 05_segmentation.csv
 ```
 
 ## How to run
