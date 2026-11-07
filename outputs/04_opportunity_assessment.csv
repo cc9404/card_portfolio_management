@@ -1,0 +1,4 @@
+opportunity,accounts,attrition_rate_pct,baseline_attrition_pct,avg_spend_12m,excess_attrited_accounts,est_spend_at_risk
+B. Spend stimulation: utilization under 10%,4030,26.5,16.1,4511.0,421.0,1897101.0
+A. Activation: inactive 3+ months,4583,22.0,16.1,4283.0,271.0,1159451.0
+C. Retention: 12m spend dropped below 0.5x in Q1,729,41.6,16.1,2376.0,186.0,441625.0

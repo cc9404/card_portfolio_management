@@ -1,0 +1,5 @@
+Card_Category,accounts,pct_of_accounts,attrition_rate_pct,avg_spend_12m,avg_transactions_12m,avg_credit_limit,avg_utilization,pct_revolving,pct_inactive_3plus_months
+Blue,9436,93.2,16.1,4225.0,64.0,7364.0,0.291,75.4,45.5
+Silver,555,5.5,14.8,6590.0,74.7,25278.0,0.057,77.5,41.6
+Gold,116,1.1,18.1,7686.0,81.5,28416.0,0.057,83.6,44.8
+Platinum,20,0.2,25.0,9000.0,87.0,30283.0,0.044,85.0,40.0
