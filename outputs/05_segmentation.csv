@@ -1,0 +1,5 @@
+segment,accounts,pct_of_accounts,attrition_rate_pct,avg_spend_12m,avg_credit_limit,avg_utilization,avg_products_held,blue_accounts
+1. Fading,4947,48.8,22.8,4144.0,8514.0,0.27,3.81,4636
+2. Under-using,1975,19.5,17.0,4856.0,14622.0,0.025,3.73,1656
+3. Engaged multi-product,1850,18.3,3.9,3538.0,4934.0,0.448,5.0,1831
+4. Core low-product,1355,13.4,6.7,5879.0,5382.0,0.422,2.31,1313
